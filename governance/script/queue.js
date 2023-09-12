@@ -4,7 +4,7 @@ const Governance = artifacts.require("Governance")
 module.exports = async function (callback) {
     // Queue 
     let proposalState
-    const id = "15356230472075598437200295397811233350645082797008050432374033298202495071836"
+    const id = "9818846468997281827720677591548342793148174686114498564706115154545109484759"
     const [executor, proposer, admin, voter1, voter2, voter3, voter4, voter5] = await web3.eth.getAccounts()
     const treasury = await Treasury.deployed()
     const governance = await Governance.deployed()

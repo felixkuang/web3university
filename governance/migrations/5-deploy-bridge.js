@@ -32,11 +32,11 @@ module.exports = async function (deployer) {
     // --> https://docs.openzeppelin.com/contracts/4.x/api/governance#timelock-proposer
     // --> https://docs.openzeppelin.com/contracts/4.x/api/governance#timelock-executor
 
-    const proposerRole = await timelock.PROPOSER_ROLE()
-    const executorRole = await timelock.EXECUTOR_ROLE()
-    const adminRole = await timelock.TIMELOCK_ADMIN_ROLE()
+    // const proposerRole = await timelock.PROPOSER_ROLE()
+    // const executorRole = await timelock.EXECUTOR_ROLE()
+    // const adminRole = await timelock.TIMELOCK_ADMIN_ROLE()
 
-    await timelock.grantRole(proposerRole, governance.address, { from: admin })
-    await timelock.grantRole(executorRole, governance.address, { from: admin })
-    await timelock.revokeRole(adminRole, admin, { from: admin })
+    // await timelock.grantRole(proposerRole, governance.address, { from: admin })
+    // await timelock.grantRole(executorRole, governance.address, { from: admin })
+    // await timelock.revokeRole(adminRole, admin, { from: admin })
 }
